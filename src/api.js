@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/users', (req, res) => {
-    res.send(db.getAll())
+    res.send(`<a href="./api/users"> user </a>`)
 })
 
 app.get('/api/users/:id', (req, res) => {
