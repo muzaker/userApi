@@ -20,7 +20,7 @@ app.get('/api/users', (req, res) => {
 app.get('/api/users/:id', (req, res) => {
     res.send(db.isId(req.params.id) || '<h1>not find this id</h1>');
 })
-
+/*
 app.post('/api/users/', (req, res) => {
 
     db.push(
@@ -44,7 +44,7 @@ app.delete('/api/users/:id', (req, res) => {
         res.status(404).send("not find it")
     }
 })
-
+*/
 const port = process.env.PORT || 5000;
 
 app.listen(
@@ -53,7 +53,8 @@ app.listen(
     }
 )
 
-
+/*
 db.isId = function (id) {
     return db.find({_id: parseInt(id)}) || undefined;
 }
+*/
