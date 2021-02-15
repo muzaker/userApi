@@ -4,7 +4,7 @@ const app = express();
 
 const Ranidb = require('ranidb');
 
-let db = new Ranidb("./data/dats.json");
+let db = new Ranidb("../data/dats.json");
 
 app.use(express.json());
 
